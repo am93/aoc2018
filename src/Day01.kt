@@ -1,9 +1,9 @@
 import java.io.File
 import java.io.InputStream
 
-var sum = 0
-val numbers:  MutableMap<Int, Int> = mutableMapOf()
-var firstFound : Boolean = false
+private var sum = 0
+private val numbers:  MutableMap<Int, Int> = mutableMapOf()
+private var firstFound : Boolean = false
 
 fun main(args: Array<String>) {
 
@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
     }
 }
 
-fun doProcessing(crrVal: String) {
+private fun doProcessing(crrVal: String) {
     sum += crrVal.toInt()
     if(!firstFound && numbers.containsKey(sum))
     {
