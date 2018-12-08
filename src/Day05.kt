@@ -27,7 +27,7 @@ fun main(args: Array<String>) {
 
 }
 
-fun doReduction(input: String):String
+private fun doReduction(input: String):String
 {
     var polymer = input
 
@@ -48,7 +48,3 @@ fun doReduction(input: String):String
 
     return polymer
 }
-
-
-
-
